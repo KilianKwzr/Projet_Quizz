@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <section class="first-section">
+
+        <div>
+            <h1>QUIZZ</h1>
+            <h2>Réponds à nos question !</h2>
+                <a href="#down">
+                <i class="fa-solid fa-arrow-down"></i>   
+                </a>
+        </div>
+
+    </section>
+
+
+
+    <section class="second-section">
+
+        <div class="container-questions" id="down">
+            <form action="#">
+                <div class="case-question">
+                    
+                    <h3>Quel équipe de foot à déjà remporté au moins une fois la ligue des champions ?</h3>
+               <div class="container-label-input">
+                    <label for="real-madrid">
+                        Real Madrid
+                        <input
+                         checked
+                         value="real-madrid"
+                         id="real-madrid"
+                         type="checkbox"
+                         name="ldc" />
+                     </label>
+                     <label for="paris">
+                       Paris
+                       <input
+                         value="paris"
+                         id="paris"
+                         type="checkbox"
+                         name="ldc"/>
+                     </label>
+                       <label for="chelsea">
+                            Chelsea
+                            <input
+                              value="chelsea"
+                              id="chelsea"
+                              type="checkbox"
+                              name="ldc"/>    
+                     </label>
+                    </div>
+                    
+                </div>
+
+                <div class="case-question">
+                    <h3>Trouvez l'intrus</h3>
+                        <div class="container-label-input">
+                    <label for="banane">
+                        Banane
+                        <input
+                         checked
+                         value="banane"
+                         id="banane"
+                         type="radio"
+                         name="fruits" />
+                     </label>
+                     <label for="cerise">
+                       Cerise
+                       <input
+                         value="cerise"
+                         id="cerise"
+                         type="radio"
+                         name="fruits">
+                        </label>
+                       <label for="vert">
+                            Vert
+                            <input
+                              value="vert"
+                              id="vert"
+                              type="radio"
+                              name="fruits"/>    
+                     </label>
+                    </div>
+                </div>
+
+                <div class="case-question">
+                    <h3>De quelle couleur est composé le drapeau de la France ? Et pourquoi ces couleurs ont-elle étaient choisis ?</h3>
+                <div class="case3-input">
+                    <input  minlength="4" maxlength="26" required type="text" placeholder="Réponse courte">
+                    <label for="story"></label>
+
+                        <textarea placeholder="réponse longue" id="story" name="story"
+                                rows="3" cols="33"></textarea>
+                </div>   
+                </div>
+
+                <div class="case-question">
+                    <h3>Quand la france à t-elle remportée pour la deuxième fois la coupe du monde !  </h3>
+                <div class="case4-label-input">
+                    <label for="start"></label>
+
+                    <input type="date" id="start" name="trip-start"
+                        value="2018-07-22"
+                        min="2018-01-01" 
+                        max="2022-12-31">
+                </div>   
+                </div>
+
+                <div class="case-question">
+                    <h3>Combien la france à t-elle remportée de coupe du monde ?</h3>
+                <div class="case5-label-input">
+                    <label for="tentacles"></label>
+
+                    <input value="0" type="number" id="tentacles" name="tentacles"
+                            min="0" max="10">
+                        </div>  
+                </div>
+
+                <div class="case-question">
+                    <h3>la reine d'Angleterre à t-elle - ou + de 100ans (- = bouton à gauche et + à droite)</h3>
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                    
+                    
+                </div>
+
+                <div class="case-question">
+                    <h3>Quel est le prénom du céléèbre youtubeur Inoxtag</h3>
+                    <label for="pet-select"></label>
+<div class="choix">
+                <select name="pets" id="pet-select">
+                <option value="">Faites le bon choix !</option>
+                <option value="regis">Régis</option>
+                <option value="samuel">Samuel</option>
+                <option value="ilan">Ilan</option>
+                <option value="ines">Ines</option>
+                <option value="samuel">Samuel</option>
+                <option value="matteo">Mattéo</option>
+</select></div>
+
+                    
+                    
+                </div>
+
+                <div class="case-question">
+                    <h3>Tente de te rapprocher le plus possible du milieu !</h3>
+                    <div>
+                        <input type="range" id="volume" name="volume"
+                               min="0" max="50">
+                        <label for="volume"></label>
+                      </div>
+                      
+                </div>
+            <div class="div-button">
+                <button type="submit">ENVOYER</button> 
+            </div>
+            </form>
+        </div>
+        
+
+    </section>
+
+</body>
+
+</html>
